@@ -150,7 +150,7 @@ export default function DashboardPage() {
                   </div>
                 </div>
                 <div className="mt-2 text-sm text-gray-500">
-                  Proyecto "Implementación ERP" ha sido marcado como completado.
+                  Proyecto &quot;Implementación ERP&quot; ha sido marcado como completado.
                 </div>
               </li>
               <li className="px-4 py-4 sm:px-6">
