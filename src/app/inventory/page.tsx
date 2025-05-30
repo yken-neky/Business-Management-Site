@@ -86,18 +86,17 @@ export default function InventoryPage() {
             <div className="flex-1 min-w-0">
               <h3 className="text-lg leading-6 font-medium text-gray-900">Productos</h3>
             </div>
-            <div className="flex space-x-3">
+            <div className="flex space-x-3 items-center">
               <div className="flex-1 min-w-0 max-w-xs">
-                <label htmlFor="search" className="sr-only">Buscar producto</label>
-                <div className="relative rounded-md shadow-sm">
+                <div className="relative">
                   <input
                     type="text"
                     name="search"
                     id="search"
-                    className="block w-full pr-10 sm:text-sm border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    className="block w-full pl-4 pr-10 py-2 sm:text-sm border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Buscar producto..."
                   />
-                  <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                  <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                     <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
