@@ -16,12 +16,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body className={inter.className}>
-        <Navbar />
-        <main className="pt-16">
-          {children}
-        </main>
+    <html lang="es" className="overflow-x-hidden bg-white">
+      <body className={`${inter.className} min-h-screen overflow-x-hidden bg-white overscroll-y-none`}>
+        <div className="min-h-screen flex flex-col bg-white">
+          <div className="sticky top-0 z-50 bg-white w-full">
+            <Navbar />
+          </div>
+          <main className="flex-grow pt-16">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );

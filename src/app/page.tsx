@@ -136,12 +136,12 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-gray-50">
+    <div className="flex flex-col bg-white">
       {/* Hero section */}
-      <div className="relative isolate">
+      <div className="relative isolate bg-gradient-to-b from-blue-900 to-blue-800">
         {/* Background image */}
         <div className="absolute inset-0 -z-10">
-          <div className="relative h-full w-full bg-gradient-to-b from-blue-900 to-blue-800">
+          <div className="relative h-full w-full">
             <Image
               src="/images/hero-business.jpg"
               alt="Business Management"
@@ -181,8 +181,8 @@ export default function Home() {
       </div>
 
       {/* Feature section */}
-      <div className="relative py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="w-full bg-gradient-to-b from-gray-50 to-white">
+        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Todo lo que necesitas para gestionar tu empresa
@@ -216,8 +216,7 @@ export default function Home() {
       </div>
 
       {/* CTA section */}
-      <div className="relative isolate">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-blue-800 to-blue-900 opacity-90" />
+      <div className="w-full bg-gradient-to-b from-blue-800 to-blue-900">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -239,7 +238,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900" aria-labelledby="footer-heading">
+      <footer className="w-full bg-gray-900" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
